@@ -41,14 +41,21 @@ student-management-system/
 ## ▶️ How to Run
 
 ### 1. Install Flask
+```bash
 pip install flask
-
+```
 ### 2. Create Database
+```bash
 python create_db.py
+```
 ### 3. Run the Application
+```bash
 python app.py
+```
 ### 4. Open in Browser
+```bash
 http://127.0.0.1:5000
+```
 
 ### ⚠️ Requirements
 Python installed on your system
