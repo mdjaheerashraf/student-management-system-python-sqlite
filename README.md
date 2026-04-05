@@ -1,18 +1,28 @@
-# Student Management System (Python + SQLite)
+# 🎓 Student Management System (Flask + SQLite)
 
 ## 📌 Description
-A CLI-based application to manage student records using Python and SQLite.
+A full-stack web application to manage student records using Flask and SQLite.  
+Users can add, view, update, and delete student details through a clean web interface.
+
+---
 
 ## 🚀 Features
-- Add student
-- View students
-- Update student
-- Delete student
+- ➕ Add Student
+- 📋 View Students
+- ✏️ Update Student
+- ❌ Delete Student
+- 🔔 Flash messages (success alerts)
+- 🎨 Clean UI with HTML & CSS
+
+---
 
 ## 🛠 Tech Stack
 - Python
+- Flask
 - SQLite
+- HTML
+- CSS
 
-## ▶️ How to Run
-```bash
-python main.py
+---
+
+## 📁 Project Structure
