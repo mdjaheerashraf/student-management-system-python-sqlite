@@ -1,4 +1,5 @@
 import sqlite3
+import os
 from flask import Flask, render_template, request, redirect, flash
 
 app = Flask(__name__)
@@ -50,7 +51,6 @@ def delete_student(id):
     cursor = conn.cursor()
 
     cursor.execute("DELETE FROM students WHERE id=?", (id,))
-
     conn.commit()
     conn.close()
 
@@ -87,6 +87,6 @@ def edit_student(id):
     return render_template("edit.html", student=student)
 
 
-# ▶ RUN APP
+# 🔹 RUN APP (FOR LOCAL + DEPLOYMENT)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
